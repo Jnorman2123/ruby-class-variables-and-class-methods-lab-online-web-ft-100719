@@ -27,6 +27,10 @@ class Song
   end
 
   def self.genre_count
-    @@genre_count[@genre] = @@count
+    if @@genre_count[@genre]
+      @@genre_count[@genre] += 1
+    else
+      @@genre_count[@genre] = 1
+    end
   end
 end
