@@ -34,5 +34,6 @@ class Song
         @@genre_count[genre_name] = 1
       end
     end
+    return @@genre_count
   end
 end
