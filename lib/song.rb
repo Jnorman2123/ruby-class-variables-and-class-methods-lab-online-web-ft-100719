@@ -46,5 +46,6 @@ class Song
         @@artist_count[artist_name] = 1
       end
     end
+    return @@artist_count
   end
 end
