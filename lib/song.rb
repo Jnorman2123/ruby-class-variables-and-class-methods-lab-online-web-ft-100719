@@ -18,6 +18,6 @@ class Song
   end
 
   def self.artists
-    return @@artists
+    return @@artists.uniq
   end
 end
